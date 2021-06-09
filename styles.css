@@ -1,0 +1,138 @@
+:root{
+    /* theme1 */
+    --main-back : hsl(222, 26%, 31%);
+    --toggle-back: hsl(223, 31%, 20%);
+    --screen-back: hsl(224, 36%, 15%);
+
+    --key-back-sec:hsl(225, 21%, 49%);
+    --key-shadow-sec:hsl(224, 28%, 35%);
+
+    --key-back-red:hsl(6, 63%, 50%);
+    --key-shadow-red:hsl(6, 70%, 34%);
+
+    --key-back:hsl(30, 25%, 89%);
+    --key-shadow:hsl(28, 16%, 65%);
+
+    --text-dark:hsl(221, 14%, 31%);
+    --text-lite:#fff;
+    
+}
+
+body{
+    background: var(--main-back);
+    font-family: 'Spartan', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 450px;
+    padding: 1em;
+}
+
+h1{
+    color: var(--text-lite);
+}
+
+.display{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+input{
+    width: 100%;
+    background: var(--screen-back);
+    color: var(--text-lite);
+    border-radius: 8px;
+    border:none;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 3rem;
+    font-family: inherit;
+    pointer-events: none;
+    overflow-x: scroll;
+}
+
+.keypad{
+    background: var(--toggle-back);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 1.3rem;
+    row-gap: 1.5rem;
+    grid-template-areas:
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "btn btn btn btn"
+    "reset reset equal equal";
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+#btn-reset{
+    grid-area: reset;
+}
+
+#calculate{
+    grid-area: equal;
+    background: var(--key-back-red);
+    color: var(--text-lite);
+    box-shadow: 0px 4px 0px var(--key-shadow-red);                            
+}
+
+
+#calculate:active{
+    box-shadow: 0px 1px 0px var(--key-shadow-red);   
+}
+
+
+.btn{ 
+    background: var(--key-back);
+    border: none;
+    border-radius: 8px;
+    padding: .5em 1em;
+    font-family: inherit;
+    font-size: 1.7rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    box-shadow: 0px 6px 0px var(--key-shadow);   
+}
+
+.btn:active{
+    transform: translateY(4px);
+    box-shadow: 0px 3px 0px var(--key-shadow);   
+}
+
+
+
+#btn-del, #btn-reset{
+    background: var(--key-back-sec);
+    box-shadow: 0px 4px 0px var(--key-shadow-sec);  
+    color: var(--text-lite);
+    font-size: 1em;
+}
+
+#btn-del:active, #btn-reset:active{
+    box-shadow: 0px 1px 0px var(--key-shadow-sec);   
+}
+
+
+
+@media screen and (max-width: 420px) {
+  .container{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btn{
+      padding: 1rem .5rem;
+  }
+}
