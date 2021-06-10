@@ -6,7 +6,6 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,14 +26,10 @@ Users should be able to:
 - Adjust the color theme based on their preference
 - **Bonus**: Have their initial theme preference checked using `prefers-color-scheme` and have any additional changes saved in the browser
 
-### Screenshot
-
-![](./screenshot.jpg)
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/nicobreins/Calculator---FEM)
-- Live Site URL: [Add live site URL here](https://nicobreins.github.io/Calculator---FEM/)
+- Solution URL: (https://github.com/nicobreins/Calculator---FEM)
+- Live Site URL: (https://nicobreins.github.io/Calculator---FEM/)
 
 ## My process
 
