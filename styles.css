@@ -176,7 +176,9 @@ body.theme3 .toggle-container{
 }
 
 
-
+#display-input{
+    display: none;
+}
 #display-container, #display-second{
     width: 100%;
     background: var(--screen-back);
