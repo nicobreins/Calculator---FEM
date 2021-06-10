@@ -21,14 +21,26 @@
 
     <div class="header">
       <h1>calc</h1>
-      <!-- <fieldset>
-        <legend>Toggle Theme</legend>
-        toggle markup
-      </fieldset> -->
+      <div class="toggle-container">
+        <p>THEME</p> 
+      <div class="toggle-wrapper">
+        <input type="radio" name="toggle-theme" id="theme1" checked class="toggle-radio">
+        <input type="radio" name="toggle-theme" id="theme2" class="toggle-radio">
+        <input type="radio" name="toggle-theme" id="theme3" class="toggle-radio">
+        <label for="theme1" class="toggle-label"><span>1</span></label>
+        <label for="theme2" class="toggle-label"><span>2</span></label>
+        <label for="theme3" class="toggle-label"><span>3</span></label>
+        <div class="toggle-slider"></div>
+
+      </div>
     </div>
 
-    <div class="display">
-      <input type="text" id="display-input" value="0">
+    </div>
+
+    <input type="hidden" id="display-input" value="0" maxlength="12">
+    <div id="display-second"></div>
+    <div id="display-container">
+      <span id="display">5555555555555555555555</span>
     </div>
 
     <div class="keypad">
@@ -47,7 +59,7 @@
       <button class="btn btn-num">3</button>
       <button class="btn btn-symb"> - </button>
 
-      <button class="btn btn-symb">.</button>
+      <button class="btn btn-num">.</button>
       <button class="btn btn-num">0</button>
       <button class="btn btn-symb"> / </button>
       <button class="btn btn-symb"> * </button>

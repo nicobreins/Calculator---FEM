@@ -12,3 +12,8 @@ CSS Variables:
 
 
 prefers-color-scheme:
+
+
+Problem to solve: 
+- dot logics
+- symbol repeatation logic - done
