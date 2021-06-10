@@ -7,7 +7,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 
@@ -71,6 +71,8 @@ body.theme3{
 .container{
     width: 28rem;
     padding: 1em;
+    margin-top: 2rem;
+
 }
 
 .header{
@@ -296,30 +298,29 @@ body.theme3 .btn{
 }
 
 .attribution{
-    color: var(--text-dark) ;
-}
-
-body.theme1 .attribution, body.theme3 .attribution{
     color: var(--text-lite) ;
 }
 
-body.theme1 .attribution a{
-    color: var(--key-back-red)  ;
+body.theme2 .attribution{
+    color: var(--text-dark) ;
+}
+
+.attribution a{
+    color: var(--key-back-red)  !important;
 }
 
 
 
 
 @media screen and (max-width: 420px) {
-    body{
-        height: auto;
-    }
+  body{
+    height: auto;
+  }
     
 
   .container{
     width: 100%;
     box-sizing: border-box;
-    margin-top: 2rem;
   }
 
   #display-container{
