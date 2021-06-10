@@ -88,6 +88,10 @@ h1{
 
 }
 
+body.theme1 h1{
+    color: var(--text-lite);
+}
+
 body.theme2 h1{
     color: var(--text-dark);
 }
@@ -99,6 +103,10 @@ body.theme3 h1{
 .toggle-container{
     display: flex;
     justify-content: space-between;
+    color: var(--text-lite);
+}
+
+body.theme1 .toggle-container{
     color: var(--text-lite);
 }
 
@@ -199,6 +207,11 @@ body.theme3 .toggle-container{
     justify-content: flex-end;
 
 }
+
+body.theme1 #display-container{
+    color: var(--text-lite);
+}
+
 
 body.theme2 #display-container{
     color: var(--text-dark);
@@ -360,17 +373,9 @@ body.theme2 .attribution{
         --text-lite:#fff;
     }
 
-    h1{
-        color: var(--text-dark);
-    }
-
-    .toggle-container{
-        color: var(--text-dark);
-    }
-
-    #display-container{
-        color: var(--text-dark);
-    }
+        h1, .toggle-container, #display-container {
+            color: var(--text-dark);
+        }
 }
 
 @media (prefers-color-scheme: dark) {
